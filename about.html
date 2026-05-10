@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Ambuj Mathur" />
+  <title>About | Ambuj Mathur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top" data-elevate>
+    <div class="container topbar__inner">
+      <a class="brand" aria-label="Go to home" href="./index.html">
+        <img class="brand__logo" src="./AM logo(white).png" alt="AM logo" />
+      </a>
+
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+          Menu
+        </button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="./index.html#about">About</a></li>
+          <li><a class="nav__link" href="./projects.html">Projects</a></li>
+          <li><a class="nav__link" href="./index.html#skills">Skills</a></li>
+          <li><a class="nav__link" href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="About" id="top-page">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">About</p>
+          <h1 class="hero__title">Hi, I’m Ambuj Mathur.</h1>
+          <p class="hero__subtitle">
+            I build clean, responsive websites and small tools, and I enjoy learning new technologies.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="./projects.html"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+            <a class="btn btn--ghost" href="./index.html#contact"><i class="fa-regular fa-envelope"></i> Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-hidden="true">
+          <div class="hero__card-glow"></div>
+          <div class="hero__card-content">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar__ring"></div>
+              <div class="avatar__initials">AM</div>
+            </div>
+            <div class="hero__card-text">
+              <p class="hero__card-title">What I’m into</p>
+              <ul class="hero__bullets">
+                <li>Responsive UI</li>
+                <li>Clean code</li>
+                <li>Fast iteration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Background">
+      <div class="container">
+        <div class="grid grid--2">
+          <article class="card">
+            <h3 class="card__title">What I’m into</h3>
+            <p class="card__text">
+              I’m interested in building practical software—especially web experiences that look good and feel fast.
+              This site is a simple, static portfolio you can personalize with your real projects and links.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">How I work</h3>
+            <p class="card__text">
+              I like clear structure, accessible UI, and small iterative improvements.
+              If you want, share your GitHub/LinkedIn and I’ll wire them in.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">© <span id="year"></span> Ambuj Mathur</p>
+      <div class="footer__links">
+        <a class="footer__link" href="#top-page">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" type="button" aria-label="Close" data-close="true">&times;</button>
+      <h3 class="modal__title" id="modalTitle">Project Title</h3>
+      <p class="modal__desc" id="modalDesc">Project description</p>
+      <div class="modal__row">
+        <p class="modal__label">Stack</p>
+        <p class="modal__value" id="modalStack">HTML, CSS, JavaScript</p>
+      </div>
+      <div class="modal__row">
+        <p class="modal__label">Links</p>
+        <p class="modal__value" id="modalLinks">GitHub: ...</p>
+      </div>
+      <div class="modal__actions">
+        <a class="btn btn--ghost" href="./projects.html" data-close="true">Close</a>
+        <a class="btn btn--primary" href="./index.html#contact" data-close="true">Contact about this</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <script src="./dist/src/main.js" defer></script>
+</body>
+</html>
+

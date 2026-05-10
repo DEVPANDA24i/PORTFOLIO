@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Skills by Ambuj Mathur" />
+  <title>Skills | Ambuj Mathur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top" data-elevate>
+    <div class="container topbar__inner">
+      <a class="brand" aria-label="Go to home" href="./index.html">
+        <img class="brand__logo" src="./AM logo(white).png" alt="AM logo" />
+      </a>
+
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+          Menu
+        </button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="./index.html">Home</a></li>
+          <li><a class="nav__link" href="./projects.html">Projects</a></li>
+          <li><a class="nav__link" href="./skills.html">Skills</a></li>
+          <li><a class="nav__link" href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Skills">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Skills</p>
+          <h1 class="hero__title">Technologies I use.</h1>
+          <p class="hero__subtitle">Update these chips with my real skills and comfort level.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="./projects.html"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+            <a class="btn btn--ghost" href="./index.html#contact"><i class="fa-regular fa-envelope"></i> Contact</a>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-hidden="true">
+          <div class="hero__card-glow"></div>
+          <div class="hero__card-content">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar__ring"></div>
+              <div class="avatar__initials">AM</div>
+            </div>
+            <div class="hero__card-text">
+              <p class="hero__card-title">Stack at a glance</p>
+              <ul class="hero__bullets">
+                <li>Frontend</li>
+                <li>Backend / Tools</li>
+                <li>General</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-label="Skills list">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__subtitle">Replace placeholders with your actual profile.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skills__col">
+            <h3 class="skills__title">Frontend</h3>
+            <ul class="chip-list">
+              <li class="chip">HTML</li>
+              <li class="chip">CSS</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">Accessibility</li>
+              <li class="chip">Responsive Design</li>
+            </ul>
+          </div>
+          <div class="skills__col">
+            <h3 class="skills__title">Backend / Tools</h3>
+            <ul class="chip-list">
+              <li class="chip">Node.js</li>
+              <li class="chip">REST APIs</li>
+              <li class="chip">Git</li>
+              <li class="chip">Automation</li>
+            </ul>
+          </div>
+          <div class="skills__col">
+            <h3 class="skills__title">General</h3>
+            <ul class="chip-list">
+              <li class="chip">Problem Solving</li>
+              <li class="chip">Writing Clean Code</li>
+              <li class="chip">Teamwork</li>
+              <li class="chip">Learning Fast</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">© <span id="year"></span> Ambuj Mathur</p>
+      <div class="footer__links">
+        <a class="footer__link" href="#top-page">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="./dist/src/main.js" defer></script>
+</body>
+</html>
+

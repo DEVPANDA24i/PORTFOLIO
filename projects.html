@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Projects by Ambuj Mathur" />
+  <title>Projects | Ambuj Mathur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top" data-elevate>
+    <div class="container topbar__inner">
+      <a class="brand" aria-label="Go to home" href="./index.html">
+        <img class="brand__logo" src="./AM logo(white).png" alt="AM logo" />
+      </a>
+
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+          Menu
+        </button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="./about.html">About</a></li>
+          <li><a class="nav__link" href="./projects.html">Projects</a></li>
+          <li><a class="nav__link" href="./index.html#skills">Skills</a></li>
+          <li><a class="nav__link" href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Projects header" id="top-page">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Projects</p>
+          <h1 class="hero__title">Selected work.</h1>
+          <p class="hero__subtitle">Click “Details” to view project information.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="./index.html#skills"><i class="fa-solid fa-code"></i> Skills</a>
+            <a class="btn btn--ghost" href="./index.html#contact"><i class="fa-regular fa-envelope"></i> Contact</a>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-hidden="true">
+          <div class="hero__card-glow"></div>
+          <div class="hero__card-content">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar__ring"></div>
+              <div class="avatar__initials">AM</div>
+            </div>
+            <div class="hero__card-text">
+              <p class="hero__card-title">Portfolio Highlights</p>
+              <ul class="hero__bullets">
+                <li>Responsive UI</li>
+                <li>Clean code</li>
+                <li>Fast iteration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__subtitle">Replace placeholders with your real work.</p>
+        </div>
+
+        <div class="project-grid" role="list">
+          <article class="project" role="listitem">
+            <div class="project__top">
+              <h3 class="project__title">Project One</h3>
+              <span class="tag">Web</span>
+            </div>
+            <p class="project__desc">A short description of what you built and what you learned.</p>
+            <div class="project__actions">
+              <button class="btn btn--small btn--primary project__details" type="button"
+                data-project-title="Project One"
+                data-project-desc="A short description of what you built and what you learned."
+                data-project-stack="HTML, CSS, JavaScript"
+                data-project-links="GitHub: (add link), Live: (add link)">
+                Details
+              </button>
+              <a class="btn btn--small btn--ghost" href="./index.html#contact">Ask about it</a>
+            </div>
+          </article>
+
+          <article class="project" role="listitem">
+            <div class="project__top">
+              <h3 class="project__title">Project Two</h3>
+              <span class="tag tag--accent">Tool</span>
+            </div>
+            <p class="project__desc">Another placeholder project description.</p>
+            <div class="project__actions">
+              <button class="btn btn--small btn--primary project__details" type="button"
+                data-project-title="Project Two"
+                data-project-desc="Another placeholder project description."
+                data-project-stack="Node.js, Express (optional)"
+                data-project-links="GitHub: (add link), Live: (add link)">
+                Details
+              </button>
+              <a class="btn btn--small btn--ghost" href="./index.html#contact">Ask about it</a>
+            </div>
+          </article>
+
+          <article class="project" role="listitem">
+            <div class="project__top">
+              <h3 class="project__title">Project Three</h3>
+              <span class="tag">UI/UX</span>
+            </div>
+            <p class="project__desc">A third project—swap this with your strongest one.</p>
+            <div class="project__actions">
+              <button class="btn btn--small btn--primary project__details" type="button"
+                data-project-title="Project Three"
+                data-project-desc="A third project—swap this with your strongest one."
+                data-project-stack="React (optional), CSS"
+                data-project-links="GitHub: (add link), Live: (add link)">
+                Details
+              </button>
+              <a class="btn btn--small btn--ghost" href="./index.html#contact">Ask about it</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">© <span id="year"></span> Ambuj Mathur</p>
+      <div class="footer__links">
+        <a class="footer__link" href="#top-page">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" type="button" aria-label="Close" data-close="true">&times;</button>
+      <h3 class="modal__title" id="modalTitle">Project Title</h3>
+      <p class="modal__desc" id="modalDesc">Project description</p>
+      <div class="modal__row">
+        <p class="modal__label">Stack</p>
+        <p class="modal__value" id="modalStack">HTML, CSS, JavaScript</p>
+      </div>
+      <div class="modal__row">
+        <p class="modal__label">Links</p>
+        <p class="modal__value" id="modalLinks">GitHub: ...</p>
+      </div>
+      <div class="modal__actions">
+        <a class="btn btn--ghost" href="./projects.html" data-close="true">Close</a>
+        <a class="btn btn--primary" href="./index.html#contact" data-close="true">Contact about this</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <script src="./dist/src/main.js" defer></script>
+</body>
+</html>
+
