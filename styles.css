@@ -313,5 +313,3 @@ input:focus,textarea:focus{border-color:rgba(124,92,255,.55);box-shadow:0 0 0 3p
 @media (max-width:920px){
   .about-photo__img{max-height:300px;}
 }
-
-
