@@ -31,8 +31,7 @@
     });
   }
 
-  // Smooth scroll for internal anchors (same-page). If the anchor target
-  // doesn’t exist, do nothing.
+
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
@@ -103,7 +102,7 @@
   if (form && note) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      note.textContent = 'Demo only: connect this form to email/API to receive messages.';
+      note.textContent = 'Demo only';
       form.reset();
     });
   }
