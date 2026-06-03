@@ -1,6 +1,5 @@
 "use strict";
-// Typed, minimal enhancement layer for your portfolio.
-// Build step is optional; script.js still works standalone.
+
 const $ = (sel) => document.querySelector(sel);
 document.addEventListener('DOMContentLoaded', () => {
     const yearEl = document.getElementById('year');
@@ -114,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.arc(dot.x, dot.y, dot.r, 0, Math.PI * 2);
                 ctx.fill();
                 // connect lines for a more dynamic feel (local neighborhood)
-                // keep it lightweight by only checking a few nearest by sampling.
+                
             }
             // draw connecting lines (O(n^2) avoided by sampling)
             const sampleStep = Math.max(1, Math.floor(dots.length / 80));
